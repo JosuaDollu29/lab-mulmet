@@ -3,7 +3,7 @@
 Repository ini berisi kode sumber untuk tugas pembuatan Website Portofolio Pribadi.
 
 ## 🌍 Live Preview (Vercel)
-[Klik di sini untuk melihat website](https://isi-dengan-link-vercel-kamu.vercel.app)
+[Klik di sini untuk melihat website]((https://lab-mulmet-p56q.vercel.app)
 
 ## 💻 Teknologi yang Digunakan
 - HTML5
