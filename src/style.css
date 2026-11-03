@@ -28,7 +28,7 @@ body {
 }
 
 
-/* Navbar dibuat menyatu tanpa box */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -63,7 +63,7 @@ nav a:hover {
   color: var(--primary-accent);
 }
 
-/* Hero section dibuat rata tanpa shadow */
+
 .hero {
   display: flex;
   align-items: center;
@@ -104,7 +104,7 @@ nav a:hover {
   color: var(--text-muted);
 }
 
-/* Section grid yang lebih bersih */
+
 .section {
   padding: 40px 0;
   margin-bottom: 24px;
