@@ -7,45 +7,39 @@
 }
 
 :root {
-  --bg-gradient: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 50%, #bae6fd 100%);
-  --card-bg: rgba(255, 255, 255, 0.65);
-  --card-border: rgba(255, 255, 255, 0.8);
-  --primary-blue: #0284c7;
-  --deep-ocean: #0f172a;
-  --text-muted: #475569;
-  --badge-bg: #e0f2fe;
-  --badge-text: #0369a1;
-  --shadow-color: rgba(14, 165, 233, 0.08);
+  /* Tema Minimalis Dominan Hitam & Merah Maron */
+  --bg-color: #050505; 
+  --card-bg: #0a0a0a;
+  --card-border: #1a1a1a;
+  --primary-accent: #8a1c1c; /* Merah Maron */
+  --text-main: #f5f5f5; 
+  --text-muted: #888888; 
 }
 
 body {
-  background: var(--bg-gradient);
-  background-attachment: fixed;
-  color: var(--deep-ocean);
+  background: var(--bg-color);
+  color: var(--text-main);
   font-family: 'Outfit', sans-serif;
   padding: 40px 10%;
   line-height: 1.6;
   min-height: 100vh;
 }
 
+/* Navbar dibuat menyatu tanpa box */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 32px;
-  background: var(--card-bg);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--card-border);
-  border-radius: 50px;
-  box-shadow: 0 8px 32px var(--shadow-color);
-  margin-bottom: 50px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: 60px;
 }
 
 nav .logo {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   font-weight: 600;
-  color: var(--primary-blue);
+  color: var(--text-main);
 }
 
 nav ul {
@@ -59,40 +53,37 @@ nav a {
   color: var(--text-muted);
   font-size: 14px;
   font-weight: 500;
-  transition: all 0.25s ease;
+  transition: color 0.25s ease;
 }
 
 nav a:hover {
-  color: var(--primary-blue);
+  color: var(--primary-accent);
 }
 
+/* Hero section dibuat rata tanpa shadow */
 .hero {
   display: flex;
   align-items: center;
   gap: 40px;
-  background: var(--card-bg);
-  backdrop-filter: blur(16px);
-  border: 1px solid var(--card-border);
-  padding: 40px;
-  border-radius: 24px;
-  box-shadow: 0 10px 30px var(--shadow-color);
+  padding: 40px 0;
+  border-bottom: 1px solid var(--card-border);
   margin-bottom: 40px;
 }
 
 .profile-img {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #ffffff;
-  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.2);
+  border: 2px solid var(--primary-accent);
+  filter: grayscale(15%);
 }
 
 .subtitle {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--primary-blue);
+  color: var(--primary-accent);
   font-weight: 600;
   margin-bottom: 6px;
 }
@@ -100,8 +91,8 @@ nav a:hover {
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 42px;
-  font-weight: 600;
-  color: var(--deep-ocean);
+  font-weight: 500;
+  color: var(--text-main);
   margin-bottom: 10px;
 }
 
@@ -110,24 +101,25 @@ nav a:hover {
   color: var(--text-muted);
 }
 
+/* Section grid yang lebih bersih */
 .section {
-  background: var(--card-bg);
-  backdrop-filter: blur(16px);
-  border: 1px solid var(--card-border);
-  padding: 32px 40px;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px var(--shadow-color);
+  padding: 40px 0;
   margin-bottom: 24px;
   display: grid;
   grid-template-columns: 240px 1fr;
   align-items: start;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.section:last-child {
+  border-bottom: none;
 }
 
 .section-label {
   font-size: 11px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--primary-blue);
+  color: var(--primary-accent);
   font-weight: 600;
   margin-bottom: 4px;
 }
@@ -135,7 +127,7 @@ nav a:hover {
 .section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 26px;
-  color: var(--deep-ocean);
+  color: var(--text-main);
 }
 
 .skills-container {
@@ -145,13 +137,19 @@ nav a:hover {
 }
 
 .badge {
-  background-color: var(--badge-bg);
-  color: var(--badge-text);
-  border: 1px solid rgba(186, 230, 253, 0.6);
+  background-color: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--card-border);
   padding: 8px 18px;
-  border-radius: 30px;
+  border-radius: 4px; /* Sudut lebih kotak untuk kesan tegas */
   font-size: 13px;
   font-weight: 500;
+  transition: all 0.3s;
+}
+
+.badge:hover {
+  border-color: var(--primary-accent);
+  color: var(--text-main);
 }
 
 .projects-container {
@@ -161,21 +159,20 @@ nav a:hover {
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(186, 230, 253, 0.8);
-  padding: 20px;
-  border-radius: 16px;
-  transition: transform 0.2s ease;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 24px;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-3px);
-  background: rgba(255, 255, 255, 0.85);
+  border-color: var(--primary-accent);
 }
 
 .project-card h3 {
   font-size: 18px;
-  color: var(--primary-blue);
+  color: var(--text-main);
   margin-bottom: 8px;
   font-family: 'Playfair Display', serif;
 }
@@ -188,6 +185,7 @@ nav a:hover {
 
 .contact-links p {
   margin-bottom: 12px;
+  color: var(--text-muted);
 }
 
 .contact-links ul {
@@ -201,11 +199,14 @@ nav a:hover {
 }
 
 .contact-links a {
-  color: var(--primary-blue);
+  color: var(--text-main);
   text-decoration: none;
+  border-bottom: 1px solid var(--primary-accent);
+  padding-bottom: 2px;
   font-weight: 500;
+  transition: color 0.3s;
 }
 
 .contact-links a:hover {
-  text-decoration: underline;
+  color: var(--primary-accent);
 }
