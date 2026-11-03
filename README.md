@@ -1,2 +1,0 @@
-# Pelatihan-Lab_JOSUADOLLU29-Telematika_dan_Multimedia_
-Penugasan dan Pengerjaan# Pelatihan-LabJOSUADOLLU29_Telematika_dan_Multimedia_
