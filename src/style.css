@@ -7,11 +7,11 @@
 }
 
 :root {
-  /* Tema Minimalis Dominan Hitam & Merah Maron */
+  
   --bg-color: #050505; 
   --card-bg: #0a0a0a;
   --card-border: #1a1a1a;
-  --primary-accent: #8a1c1c; /* Merah Maron */
+  --primary-accent: #8a1c1c; 
   --text-main: #f5f5f5; 
   --text-muted: #888888; 
 }
@@ -25,7 +25,7 @@ body {
   min-height: 100vh;
 }
 
-/* Navbar dibuat menyatu tanpa box */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -60,7 +60,7 @@ nav a:hover {
   color: var(--primary-accent);
 }
 
-/* Hero section dibuat rata tanpa shadow */
+
 .hero {
   display: flex;
   align-items: center;
@@ -101,7 +101,7 @@ nav a:hover {
   color: var(--text-muted);
 }
 
-/* Section grid yang lebih bersih */
+
 .section {
   padding: 40px 0;
   margin-bottom: 24px;
@@ -141,7 +141,7 @@ nav a:hover {
   color: var(--text-muted);
   border: 1px solid var(--card-border);
   padding: 8px 18px;
-  border-radius: 4px; /* Sudut lebih kotak untuk kesan tegas */
+  border-radius: 4px; 
   font-size: 13px;
   font-weight: 500;
   transition: all 0.3s;
