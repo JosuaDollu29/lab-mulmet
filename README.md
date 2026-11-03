@@ -1,2 +1,2 @@
-# Pelatihan-Lab_Nagazz-Telematika_dan_Multimedia_
+# Pelatihan-Lab_JOSUADOLLU29-Telematika_dan_Multimedia_
 Penugasan dan Pengerjaan# Pelatihan-Lab_Telematika_dan_Multimedia_
