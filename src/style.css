@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 50%, #bae6fd 100%);
+  --card-bg: rgba(255, 255, 255, 0.65);
+  --card-border: rgba(255, 255, 255, 0.8);
+  --primary-blue: #0284c7;
+  --deep-ocean: #0f172a;
+  --text-muted: #475569;
+  --badge-bg: #e0f2fe;
+  --badge-text: #0369a1;
+  --shadow-color: rgba(14, 165, 233, 0.08);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-main);
+  font-family: 'Outfit', sans-serif;
+  padding: 40px 10%;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+
+/* Navbar dibuat menyatu tanpa box */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: 60px;
+}
+
+nav .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+nav a:hover {
+  color: var(--primary-accent);
+}
+
+/* Hero section dibuat rata tanpa shadow */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-accent);
+  filter: grayscale(15%);
+}
+
+.subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--primary-accent);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+/* Section grid yang lebih bersih */
+.section {
+  padding: 40px 0;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  align-items: start;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--primary-accent);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: var(--text-main);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.badge {
+  background-color: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--card-border);
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.badge:hover {
+  border-color: var(--primary-accent);
+  color: var(--text-main);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 24px;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: var(--primary-accent);
+}
+
+.project-card h3 {
+  font-size: 18px;
+  color: var(--text-main);
+  margin-bottom: 8px;
+  font-family: 'Playfair Display', serif;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.contact-links p {
+  margin-bottom: 12px;
+  color: var(--text-muted);
+}
+
+.contact-links ul {
+  list-style: none;
+}
+
+.contact-links li {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+
+.contact-links a {
+  color: var(--text-main);
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary-accent);
+  padding-bottom: 2px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.contact-links a:hover {
+  color: var(--primary-accent);
+}
