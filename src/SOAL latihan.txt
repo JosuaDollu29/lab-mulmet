@@ -1,0 +1,8 @@
+Soal 1 
+ * Penanganan Browser: Browser memiliki mekanisme error recovery. Saat menemukan tag penutup </p> yang tidak cocok dengan pembuka <h3>, browser akan mencoba memperbaikinya secara otomatis (misalnya menutup paksa <h3>).
+ * Semantik & Aksesibilitas: Tag <h3> ditujukan untuk penanda judul, bukan paragraf panjang. Jika disatukan, screen reader akan membacanya sebagai judul panjang
+   <h3>Project 2EZ4U DELIVERY APP</h3>
+   <p>Proyek ini adalah simulasi aplikasi...</p>
+Soal 2 
+ * Penyebab & Perbaikan: Browser menganggap nilai tersebut sebagai tautan relatif ke file lokal karena tidak ada protokol URL.
+ 
